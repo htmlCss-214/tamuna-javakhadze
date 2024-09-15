@@ -70,10 +70,11 @@ nav{
     border: solid 1px transparent;
     border-radius: 10px;
     padding: 5px;
-    transition: border-color 0.5s ease-in;
+    transition: border-color 0.5s ease-in, background-color 0.5s ease-in;
 }
 .list-item:hover{
     border-color: white;
+    background-color: rgb(82, 82, 82);
 }
 .header-text{
     font-family: "Noto Serif Display", serif ;
@@ -82,6 +83,7 @@ nav{
     font-size: 50px;
     color: var(--white-text);
     line-height: 1.2;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 .hr-header-text{
     width: 540px;
@@ -92,6 +94,7 @@ nav{
     width: 800px;
     font-size: 15px;
     color: var(--white-text);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
 /* main */
@@ -124,10 +127,21 @@ nav{
 .about-us-image{
     width:600px;
 }
+.link{
+    color: black;
+    font-weight: 600;
+}
+.link:hover{
+    color: rgb(43, 0, 199)
+}
+.link:active{
+    color: red;
+}
 
 /* blog */
 .section2{
     padding-top:50px;
+    padding-bottom: 50px;
     background-color: white;
 }
 .our-blog-tittle{
@@ -178,9 +192,268 @@ nav{
 .blog-text{
     margin-top:10px;
 }
+.load-more{
+    margin:0 auto;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+.button{
+    font-family: "Quicksand", serif ;
+    font-weight: 400;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border: solid 1px black;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    transition: background-color 0.5s ease;
+}
+.button:hover{
+    background-color: rgb(82, 82, 82);
+    color: white;
+    border-color:white;
+}
+
+/* section 3 */
+.section3{
+    background-image: url("../images/pattern-background.jpg");
+    background-color: rgb(230, 230, 230);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-color: white;
+    width: 100%;
+    height: 99vh;
+    padding-top:50px;
+}
+.section3-wrapper{
+    width:90%;
+    margin:0 auto;
+}
+.rooms-and-cost{
+    font-family: "Noto Serif Display", serif ;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.grid{
+    margin: 0 auto;
+    width: 800px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:2px;
+}
+.grid-element{
+    text-align: center;
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    border: solid 1px transparent;
+}
+.grid-element:nth-child(1){
+    background-color: rgb(238, 238, 238);
+    text-decoration: underline;
+}
+.grid-element:nth-child(2){
+    background-color: rgb(238, 238, 238);
+}
+.grid-element:nth-child(3){
+    background-color: rgb(238, 238, 238);
+}
+.grid-element:nth-child(4){
+    background-color: rgb(238, 238, 238);
+}
+.grid-element:nth-child(7){
+    background-color: rgb(238, 238, 238);
+}
+.grid-element:nth-child(10){
+    background-color: rgb(238, 238, 238);
+}
+.grid-element:nth-child(5){
+    background-color: white;
+    font-weight: 600;
+}
+.grid-element:nth-child(6){
+    background-color: white;
+    font-weight: 600;
+}
+.grid-element:nth-child(8){
+    background-color: white;
+    font-weight: 600;
+}
+.grid-element:nth-child(9){
+    background-color: white;
+    font-weight: 600;
+}
+.grid-element:nth-child(11){
+    background-color: white;
+    font-weight: 600;
+}
+.grid-element:nth-child(12){
+    background-color: white;
+    font-weight: 600;
+}
+.text-utilities{
+    margin-top:50px;
+    font-family: "Noto Serif Display", serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* section4 */
+.section4{
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color: white;
+}
+.section4-wrapper{
+    width:90%;
+    margin:0 auto;
+}
+.section4-content-wrapper{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.section4-left-text{
+    width:500px;
+}
+.section4-right-text{
+    width:500px;
+}
+.section4-title{
+    font-family: "Noto Serif Display", serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.section4-text{
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.room-pics{
+    margin-top: 50px;
+}
+.room-pic1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.room-pic2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.room-pic3{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.room-img{
+    width:500px;
+    box-shadow: 5px 5px 5px grey;
+}
+.text-room{
+    width: 400px;
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 30px;
+    padding:10px;
+    box-shadow: 3px 3px 5px grey;
+}
+.line-room{
+    background-color: black;
+    width: 30px;
+    height: 1px;
+}
+.text-room2{
+    width: 400px;
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 30px;
+    padding:10px;
+    box-shadow: 3px 3px 5px grey;
+}
+.line-room2{
+    background-color: black;
+    width: 30px;
+    height: 1px;
+}
 
 
 
+/* section 6 */
+.section6{
+    background-color: rgb(230, 230, 230);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.section6-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.location-info{
+    width: 500px;
+    padding-top: 10px;
+}
+.location{
+    font-family: "Noto Serif Display", serif ;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.location-text{
+    font-family:"Quicksand", serif ;
+    text-align: center;
+}
+.address{
+    text-decoration:underline;
+}
+.location-content-wrapper{
+    line-height: 1.5;
+}
+.universities-list{
+    font-weight:bold;
+    line-height: 2;
+}
+.university-logos{
+    margin: 0 auto;
+    margin-top:20px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.university-logo{
+    width:50px;
+}
+.logo-line{
+    width: 1px;
+    height:60px;
+    background-color: rgb(82, 82, 82);
+}
+.maps{
+    border-radius: 20px;
+}
 
 
 
