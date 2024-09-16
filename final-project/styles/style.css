@@ -7,9 +7,6 @@
 /* Quicksand */
 
 /* header */
-/* body{
-    background:rgb(230, 230, 230);
-} */
 .background-img {
     position:absolute;
     background-image: url(../images/background.jpg);
@@ -74,7 +71,7 @@ nav{
 }
 .list-item:hover{
     border-color: white;
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(255, 115, 0);
 }
 .header-text{
     font-family: "Noto Serif Display", serif ;
@@ -98,8 +95,9 @@ nav{
 }
 
 /* main */
+/* about us - section 1*/
 .section1{
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
     padding-top:50px;
     padding-bottom:50px;
 }
@@ -138,7 +136,7 @@ nav{
     color: red;
 }
 
-/* blog */
+/* blog - section 2*/
 .section2{
     padding-top:50px;
     padding-bottom: 50px;
@@ -148,6 +146,12 @@ nav{
     font-family: "Noto Serif Display", serif ;
     font-weight: 800;
     font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.our-blog-text{
+    font-family: "Quicksand", serif ;
+    font-size: 15px;
     text-align: center;
     padding-bottom: 50px;
 }
@@ -215,14 +219,14 @@ nav{
     border-color:white;
 }
 
-/* section 3 */
+/* room pricing section 3 */
 .section3{
     background-image: url("../images/pattern-background.jpg");
     background-color: rgb(230, 230, 230);
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     width: 100%;
     height: 99vh;
     padding-top:50px;
@@ -305,11 +309,11 @@ nav{
     text-align: center;
 }
 
-/* section4 */
+/* rooms - section 4 */
 .section4{
     padding-top:50px;
     padding-bottom:50px;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
 }
 .section4-wrapper{
     width:90%;
@@ -320,10 +324,11 @@ nav{
     justify-content: space-around;
     align-items: flex-start;
 }
-.section4-left-text{
-    width:500px;
-}
-.section4-right-text{
+.section4-info{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px grey;
+    padding: 30px;
     width:500px;
 }
 .section4-title{
@@ -371,6 +376,7 @@ nav{
     border: solid 1px black;
     border-radius: 30px;
     padding:10px;
+    background-color: white;
     box-shadow: 3px 3px 5px grey;
 }
 .line-room{
@@ -387,6 +393,7 @@ nav{
     border: solid 1px black;
     border-radius: 30px;
     padding:10px;
+    background-color: white;
     box-shadow: 3px 3px 5px grey;
 }
 .line-room2{
@@ -395,7 +402,49 @@ nav{
     height: 1px;
 }
 
-
+/* facilities - section 5 */
+.section5{
+    background-color: rgb(66, 66, 66);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.facilities{
+    font-family: "Noto Serif Display", serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+.section5-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.icon-row:nth-child(1){
+    margin-bottom: 100px;
+}
+.icon-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon{
+    width:25%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    color: white;
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.fa-solid{
+    font-size: 40px;
+}
 
 /* section 6 */
 .section6{
