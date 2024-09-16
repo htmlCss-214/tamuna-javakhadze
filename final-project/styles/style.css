@@ -97,7 +97,7 @@ nav{
 /* main */
 /* about us - section 1*/
 .section1{
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     padding-top:50px;
     padding-bottom:50px;
 }
@@ -140,7 +140,7 @@ nav{
 .section2{
     padding-top:50px;
     padding-bottom: 50px;
-    background-color: white;
+    background-color: orangered;
 }
 .our-blog-tittle{
     font-family: "Noto Serif Display", serif ;
@@ -148,12 +148,14 @@ nav{
     font-size: 40px;
     text-align: center;
     padding-bottom: 20px;
+    color: white;
 }
 .our-blog-text{
     font-family: "Quicksand", serif ;
     font-size: 15px;
     text-align: center;
     padding-bottom: 50px;
+    color: white;
 }
 .blog-wrapper{
     width:100%;
@@ -166,7 +168,7 @@ nav{
     font-family:"Quicksand", serif ;
     border-radius: 30px;
     background-color: white;
-    box-shadow: 10px 10px 20px grey;
+    box-shadow: 10px 10px 20px black;
     cursor:pointer;
     transition: scale 0.5s ease-out;
 }
@@ -214,12 +216,13 @@ nav{
     transition: background-color 0.5s ease;
 }
 .button:hover{
-    background-color: rgb(82, 82, 82);
+    background-color: orangered;
     color: white;
     border-color:white;
+
 }
 
-/* room pricing section 3 */
+/* room pricing - section 3 */
 .section3{
     background-image: url("../images/pattern-background.jpg");
     background-color: rgb(230, 230, 230);
@@ -446,7 +449,7 @@ nav{
     font-size: 40px;
 }
 
-/* section 6 */
+/* location - section 6 */
 .section6{
     background-color: rgb(230, 230, 230);
     padding-top: 50px;
@@ -503,6 +506,180 @@ nav{
 .maps{
     border-radius: 20px;
 }
+
+/* form - section7 */
+.section7{
+    background-color: rgb(27, 27, 27);
+}
+.get-in-touch{
+    font-family: "Noto Serif Display", serif ;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.text-get-in-touch{
+    font-family: "Quicksand", serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section7-wrapper{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 0px 0px 50px 50px;
+}
+#form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.all-input-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.label{
+    font-family:"Quicksand", serif ;
+    color: rgb(73, 73, 73);
+    font-size: 20px;
+}
+.input{
+    height: 45px;
+    font-size: 15px;
+    font-family:"Quicksand", serif ;
+    color: rgb(73, 73, 73);
+    padding: 0 20px 0 20px;
+    border: solid 1px rgb(73, 73, 73);
+    border-radius: 30px;
+}
+input:focus{
+    outline: none;
+}
+.input::placeholder{
+    color: rgb(201, 200, 200);
+    font-size: 15px;
+    font-family:"Quicksand", serif ;
+}
+.bigger-button{
+    width: 150px;
+    font-size: 20px;
+    border-color: rgb(73, 73, 73);
+}
+
+/* footer */
+footer{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-family:"Quicksand", serif ;
+}
+.footer-title{
+    font-family: "Noto Serif Display", serif ;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+.footer-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.footer-content-wrapper{
+    margin: 0 auto;
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.contact-info{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.media-payment-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.icon-text-wrapper{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 15px;
+}
+.icon-text-wrapper:hover{
+    color: orangered;
+}
+.media-icon-wrapper{
+    width: 200px;
+    display:flex;
+    justify-content: space-between;
+}
+.fa-envelope, .fa-phone, .fa-map-location-dot{
+    font-size: 25px;
+}
+.social-media{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.fa-brands{
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-brands:hover{
+    color:orangered;
+}
+.payment-methods{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+.fa-cc-mastercard, .fa-cc-visa{
+    font-size: 40px;
+}
+.copyright-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-text{
+    font-family:"Quicksand", serif ;
+    cursor: pointer;
+}
+#copyright{
+    font-family:"Quicksand", serif ;
+}
+.footer-text:hover{
+    color:orangered;
+}
+
+
 
 
 
