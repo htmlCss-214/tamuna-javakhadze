@@ -1,0 +1,45 @@
+/* 
+small phone - 320px-480px
+normal phone - 481px-767px
+tablet or a small laptop - 768px-1023px
+normal laptop - 1024px-1200px
+large laptop - 1201px-1400px 
+
+min-width - 1024
+1440-2k
+
+my pc - 1366 */
+
+@media only screen and (min-width: 1367px) and (max-width:1440px){
+    .header-text{
+        width: 1000px;
+    }
+    nav{
+        width: 900px;
+    }
+    .about-us-wrapper{
+        width: 650px;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    /* .blog-wrapper{
+        flex-direction: column;
+    } */
+}
+
+
+
+
+
+
+@media only screen and (max-width:1024px){
+    .section5-info{
+        width:300px;
+    }
+}
+
+
+
+
+

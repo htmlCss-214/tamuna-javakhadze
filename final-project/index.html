@@ -25,29 +25,35 @@
     </head>
     <body>
         <header>
-            <div class="nav-logo">
-                <div class="nav-logo-wrapper">
-                    <div class="logo">
-                        <a href="#" class="logo-a">Unistay</a>
-                    </div>
-                    <nav>
-                        <ul class="nav-ul">
-                            <li class = "list-item"><a href='index.html' class="nav-a">Home</a></li>
-                            <li class = "list-item"><a href='about-us.html' class="nav-a">About Us</a></li>
-                            <li class = "list-item"><a href='blog.html' class="nav-a">Blog</a></li>
-                            <li class = "list-item"><a href='rooms.html' class="nav-a">Rooms and Prices</a></li>
-                            <li class = "list-item"><a href='contact.html' class="nav-a">Contact</a></li>
-                        </ul>
-                    </nav>
+            <div class="width-center" id="nav-logo-wrapper">
+                <div id="website-logo">
+                    <a href="index.html" id="website-logo-text">Unistay</a>
                 </div>
+                <nav>
+                    <ul id="nav-ul">
+                        <li id="list-item-nav"><a id="list-item-nav-text" href='index.html'>Home</a></li>
+                        <li id="list-item-nav"><a id="list-item-nav-text" href='about-us.html'>About Us</a></li>
+                        <li id="list-item-nav"><a id="list-item-nav-text" href='blog.html'>Blog</a></li>
+                        <li id="list-item-nav"><a id="list-item-nav-text" href='rooms.html'>Rooms and Prices</a></li>
+                        <li id="list-item-nav"><a id="list-item-nav-text" href='contact.html'>Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
         <main>
-            <section>
+            <div id="chat-with-us">
+                <div class="chat-with-us-wrapper">
+                    <i class="fa-regular fa-comment" style="font-size: 30px;"></i>
+                    <p>Chat with us</p>
+                    <i class="fa-solid fa-upload" style="color: white; font-size: 30px;"></i>
+                </div>
+            </div>
+
+            <section id="section1">
                 <div class="background-img">
                 </div>
-                <div class="background-img-wrapper">
+                <div class="width-center" id="background-img-wrapper">
                     <div>
                         <p class="header-text">Student Accomodation for international students in Tbilisi, Georgia</p>
                         <hr class="hr-header-text">
@@ -55,10 +61,11 @@
                     </div>
                 </div>
             </section>
-            <section class="section1">
-                <div class="section1-wrapper">
+
+            <section id="section2">
+                <div class="width-center" id="section2-wrapper">
                     <div class="about-us-wrapper">
-                        <p class="about-us">About Us</p>
+                        <p class="title">About Us</p>
                         <div class="about-us-content">
                             <p>Welcome to <b>Unistay</b>, your gateway to premium student accommodation in <b>Georgia</b>! 
                             As a newly established housing company, we offer international students 
@@ -85,16 +92,14 @@
                             </p>
                         </div>
                     </div>
-                    <div class="about-us-image">
-                        <img src="images/about-us.jpg" alt="image">
-                    </div>
+                    <img src="images/about-us.jpg" alt="image">
                 </div>
             </section>
 
-            <section class="section2">
-                <p class="our-blog-tittle">Blog</p>
+            <section id="section3">
+                <p class="title" id="our-blog-tittle">Blog</p>
                 <p class="our-blog-text">Expert tips and advices about student life in our accomodation</p>
-                <div class="blog-wrapper">
+                <div class="width-center blog-wrapper">
                     <div class="blog">
                         <div class="blog-img-wrapper">
                             <img class="blog-img" src="images/blog1.gif" alt="gif">
@@ -139,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="blog-wrapper">
+                <div class="width-center blog-wrapper">
                     <div class="blog">
                         <div class="blog-img-wrapper">
                             <img class="blog-img" src="images/blog4.jpg" alt="image">
@@ -183,7 +188,7 @@
                 </div>
 
 
-                <div class="blog-wrapper">
+                <div class="width-center blog-wrapper">
                     <div class="blog">
                         <div class="blog-img-wrapper">
                             <img class="blog-img" src="images/blog7.jpg" alt="image">
@@ -231,9 +236,10 @@
                     <button class="button">Load more</button>
                 </div>
             </section>
-            <section class="section3">
-                <div class="section3-wrapper">
-                    <p class="rooms-and-cost">Room types and their monthly cost:</p>
+
+            <section id="section4">
+                <div class="width-center">
+                    <p class="title" id="rooms-and-cost-title">Room types and their monthly cost:</p>
                     <div class="grid">
                         <div class="grid-element">Room Types</div>
                         <div class="grid-element">Without Kitchen</div>
@@ -251,21 +257,22 @@
                     <p class="text-utilities">Utilities are included in the price</p>
                 </div>
             </section>
-            <section class="section4">
-                <div class="section4-wrapper">
-                    <div class="section4-content-wrapper">
-                        <div class="section4-info">
-                            <p class="section4-title">Room Options:</p>
-                            <ul class="section4-text">
+            
+            <section id="section5">
+                <div class="width-center">
+                    <div class="section5-content-wrapper">
+                        <div class="section5-info">
+                            <p class="title">Room Options:</p>
+                            <ul class="section5-text">
                                 <li>Single Rooms - Enjoy privacy and your own space in a comfortable single room.</li><br>
                                 <li>Double Rooms - Share with a roommate! Spacious rooms with a shared bathroom.</li><br>
                                 <li>Quad Rooms - Ideal for groups or budget-conscious individuals, 
                                     sharing the experience with three others.</li>
                             </ul>
                         </div>
-                        <div class="section4-info">
-                            <p class="section4-title">Amenities Include:</p>
-                            <ul class="section4-text">
+                        <div class="section5-info">
+                            <p class="title section5-title">Amenities Include:</p>
+                            <ul class="section5-text">
                                 <li>Shared or private bathrooms (depending on room type)</li><br>
                                 <li>High-speed internet</li><br>
                                 <li>24/7 security</li><br>
@@ -293,9 +300,9 @@
                 </div>
             </section>
 
-            <section class="section5">
-                <p class="facilities">Facilities</p>
-                <div class="section5-wrapper">
+            <section id="section6">
+                <p class="title" id="facilities-title">Facilities</p>
+                <div class="width-center">
                     <div class="icon-row">
                         <div class="icon">
                             <i class="fa-solid fa-dollar-sign"></i>
@@ -335,10 +342,10 @@
                 </div>
             </section>
 
-            <section class="section6">
-                <div class="section6-wrapper">
+            <section id="section7">
+                <div class="width-center" id="section7-wrapper">
                     <div class="location-info">
-                        <p class="location">Location</p>
+                        <p class="title" id="location-title">Location</p>
                         <div class="location-text">
                             <p>
                                 The building is conveniently located at:
@@ -380,9 +387,9 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
-            <section class="section7">
-                <div class="section7-wrapper">
-                    <p class="get-in-touch">Get In Thouch</p>
+            <section id="section8">
+                <div class="width-center" id="section8-wrapper">
+                    <p class="title" id="get-in-touch-title">Get In Thouch</p>
                     <p class="text-get-in-touch">please fill out the form below and we will contact you</p>
                     <form action="" id="form">
                         <div class="all-input-wrapper">
@@ -414,14 +421,13 @@
                     </form>
                 </div>
             </section>
-        
         </main>
 
         <footer>
-            <div class="footer-wrapper">
+            <div class="width-center" id="footer-wrapper">
                 <div class="footer-content-wrapper">
                     <div class="contact-info">
-                        <p class="footer-title">Contact Info</p>
+                        <p class="title footer-title">Contact Info</p>
                         <div class="icon-text-wrapper">
                             <i class="fa-solid fa-envelope"></i>
                             <p>contactcompany@UniStay.com</p>
@@ -438,7 +444,7 @@
                     <hr class="hr-footer">
                     <div class="media-payment-wrapper">
                         <div class="social-media">
-                            <p class="footer-title">Social Media</p>
+                            <p class="title footer-title">Social Media</p>
                             <div class="media-icon-wrapper">
                                 <i class="fa-brands fa-facebook-f"></i>
                                 <i class="fa-brands fa-instagram"></i>
@@ -448,7 +454,7 @@
                         </div>
                         
                         <div class="payment-methods">
-                            <p class="footer-title">Mayment Methods</p>
+                            <p class="title footer-title">Mayment Methods</p>
                             <div>
                                 <i class="fa-brands fa-cc-mastercard"></i>
                                 <i class="fa-brands fa-cc-visa"></i>
