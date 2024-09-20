@@ -25,29 +25,35 @@
     </head>
     <body>
         <header>
-            <div class="nav-logo">
-                <div class="nav-logo-wrapper">
-                    <div class="logo">
-                        <a href="#" class="logo-a">Unistay</a>
-                    </div>
-                    <nav>
-                        <ul class="nav-ul">
-                            <li class = "list-item"><a href='index.html' class="nav-a">Home</a></li>
-                            <li class = "list-item"><a href='about-us.html' class="nav-a">About Us</a></li>
-                            <li class = "list-item"><a href='blog.html' class="nav-a">Blog</a></li>
-                            <li class = "list-item"><a href='rooms.html' class="nav-a">Rooms and Prices</a></li>
-                            <li class = "list-item"><a href='contact.html' class="nav-a">Contact</a></li>
-                        </ul>
-                    </nav>
+            <div class="width-center" id="nav-logo-wrapper">
+                <div id="website-logo">
+                    <a href="index.html" id="website-logo-text">Unistay</a>
                 </div>
+                <nav>
+                    <ul id="nav-ul">
+                        <li id="list-item-nav"><a id="list-item-nav-text" href='index.html'>Home</a></li>
+                        <li id="list-item-nav"><a id="list-item-nav-text" href='about-us.html'>About Us</a></li>
+                        <li id="list-item-nav"><a id="list-item-nav-text" href='blog.html'>Blog</a></li>
+                        <li id="list-item-nav"><a id="list-item-nav-text" href='rooms.html'>Rooms and Prices</a></li>
+                        <li id="list-item-nav"><a id="list-item-nav-text" href='contact.html'>Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
         <main>
-            <section>
+            <div id="chat-with-us">
+                <div class="chat-with-us-wrapper">
+                    <i class="fa-regular fa-comment" style="font-size: 30px;"></i>
+                    <p>Chat with us</p>
+                    <i class="fa-solid fa-upload" style="color: white; font-size: 30px;"></i>
+                </div>
+            </div>
+
+            <section id="section1">
                 <div class="background-img">
                 </div>
-                <div class="background-img-wrapper">
+                <div class="width-center" id="background-img-wrapper">
                     <div>
                         <p class="header-text">Student Accomodation for international students in Tbilisi, Georgia</p>
                         <hr class="hr-header-text">
@@ -55,10 +61,11 @@
                     </div>
                 </div>
             </section>
-            <section class="section2">
-                <p class="our-blog-tittle">Blog</p>
+
+            <section id="section3">
+                <p class="title" id="our-blog-tittle">Blog</p>
                 <p class="our-blog-text">Expert tips and advices about student life in our accomodation</p>
-                <div class="blog-wrapper">
+                <div class="width-center grid-blog">
                     <div class="blog">
                         <div class="blog-img-wrapper">
                             <img class="blog-img" src="images/blog1.gif" alt="gif">
@@ -101,9 +108,6 @@
                             </p>
                         </div>
                     </div>
-                </div>
-
-                <div class="blog-wrapper">
                     <div class="blog">
                         <div class="blog-img-wrapper">
                             <img class="blog-img" src="images/blog4.jpg" alt="image">
@@ -144,10 +148,6 @@
                             </p>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="blog-wrapper">
                     <div class="blog">
                         <div class="blog-img-wrapper">
                             <img class="blog-img" src="images/blog7.jpg" alt="image">
@@ -173,7 +173,7 @@
                             <p class="blog-text">
                                 Highlight cutting-edge amenities and technologies (like smart appliances, 
                                 high-speed Wi-Fi, communal study spaces) that make student living more convenient.
-                            </p>
+                             </p>
                         </div>
                     </div>
                     <div class="blog">
@@ -182,23 +182,23 @@
                         </div>
                         <div class="blog-content">
                             <p class="blog-title">
-                                Sustainability in Student Housing: How We’re Reducing Our Environmental Impact
+                                Sustainability in Student Housing: How We're Reducing Our Environmental Impact
                             </p>
                             <p class="blog-text">
-                                Showcase your company’s green initiatives and sustainability efforts, such as 
+                                Showcase your company's green initiatives and sustainability efforts, such as 
                                 energy-efficient buildings, recycling programs, or eco-friendly facilities.
                             </p>
                         </div>
-                    </div>
+                    </div>         
                 </div>
                 <div class="load-more">
                     <button class="button">Load more</button>
                 </div>
             </section>
 
-            <section class="section7">
-                <div class="section7-wrapper">
-                    <p class="get-in-touch">Get In Thouch</p>
+            <section id="section8">
+                <div class="width-center" id="section8-wrapper">
+                    <p class="title" id="get-in-touch-title">Get In Thouch</p>
                     <p class="text-get-in-touch">please fill out the form below and we will contact you</p>
                     <form action="" id="form">
                         <div class="all-input-wrapper">
@@ -230,14 +230,13 @@
                     </form>
                 </div>
             </section>
-        
         </main>
 
         <footer>
-            <div class="footer-wrapper">
+            <div class="width-center" id="footer-wrapper">
                 <div class="footer-content-wrapper">
                     <div class="contact-info">
-                        <p class="footer-title">Contact Info</p>
+                        <p class="title footer-title">Contact Info</p>
                         <div class="icon-text-wrapper">
                             <i class="fa-solid fa-envelope"></i>
                             <p>contactcompany@UniStay.com</p>
@@ -254,7 +253,7 @@
                     <hr class="hr-footer">
                     <div class="media-payment-wrapper">
                         <div class="social-media">
-                            <p class="footer-title">Social Media</p>
+                            <p class="title footer-title">Social Media</p>
                             <div class="media-icon-wrapper">
                                 <i class="fa-brands fa-facebook-f"></i>
                                 <i class="fa-brands fa-instagram"></i>
@@ -264,7 +263,7 @@
                         </div>
                         
                         <div class="payment-methods">
-                            <p class="footer-title">Mayment Methods</p>
+                            <p class="title footer-title">Mayment Methods</p>
                             <div>
                                 <i class="fa-brands fa-cc-mastercard"></i>
                                 <i class="fa-brands fa-cc-visa"></i>
