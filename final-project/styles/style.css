@@ -56,24 +56,30 @@ header{
     color: var(--white-text);
 }
 nav{
-    width: 750px;
+    width: 70%;
 }
 #nav-ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#list-item-nav{
+.list-item-nav{
     border: solid 1px transparent;
     border-radius: 10px;
     padding: 5px;
     transition: border-color 0.5s ease-in, background-color 0.5s ease-in;
 }
-#list-item-nav:hover{
+.list-item-nav:hover{
     border-color: white;
     background-color: var(--orangered);
 }
-#list-item-nav-text{
+.fa-circle-chevron-down{
+    transition: color 0.5s ease-in;
+}
+#drowpdown:hover .fa-circle-chevron-down{
+    color: white;
+}
+.list-item-nav-text{
     font-family: "Montserrat", serif ;
     font-size: 17px;
     color: var(--white-text);
@@ -427,6 +433,19 @@ nav{
     height: 1px;
 }
 
+/* FAQs - section 9 */
+
+#section9{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+.q-and-a{
+    font-family: var(--font-text);
+    font-size: 20px;
+    width: 100%;
+}
+
 /* facilities - section 6 */
 #section6{
     background-color: var(--dark-grey-background);
@@ -517,7 +536,7 @@ nav{
     border-radius: 20px;
 }
 
-/* form - section8 */
+/* form - section 8 */
 #section8{
     background-image: linear-gradient(rgb(150, 150, 150), rgb(20, 20, 20));
 }
