@@ -2,100 +2,96 @@
 small phone - 320px-480px
 normal phone - 481px-767px
 tablet or a small laptop - 768px-1023px
-normal laptop - 1024px-1200px
-large laptop - 1201px-1400px 
-
-min-width - 1024
-1440-2k
-
-my pc - 1366 */
+small laptop - 1024px-1200px
+normal laptop - 1201px-1439px 
+large pc - 1440px>
+*/
 
 
-/* header and front page*/
+/* for all */
+@media only screen and (max-width:767px){
+    .title{
+        font-size: 35px;
+    }
+}
+
+/* header and background img*/
 @media only screen and (min-width: 1367px){
-    .section1-content-wrapper{
+    .background-img-content-wrapper{
         width: 1000px;
     }
 }
-@media only screen and (min-width: 950px) and (max-width:1120px){
-    .list-item-nav-text{
-        font-size: 15px;
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    nav{
+        width: 65%;
     }
-}
-@media only screen and (min-width: 830px) and (max-width:949px){
     .list-item-nav-text{
-        font-size: 13px;
+        font-size: 12px;
     }
     #website-logo{
         margin-left: 20px;
     }
-    #website-logo-text{
-        font-size: 40px;
-    }
 }
-@media only screen and (min-width: 320px) and (max-width:829px){
+@media only screen and (max-width:767px){
     nav{
         display: none;
     }
     #website-logo{
-        margin-left: 30px;
+        margin-left: 10px;
     }
-    #website-logo-text{
-        font-size: 40px;
-    }
-}
-@media only screen and (min-width: 320px) and (max-width:796px){
-    .section1-content-wrapper{
-        width: 100%;
-    }
-}
-@media only screen and (min-width: 320px) and (max-width:613px){
     .header-text{
         font-size: 40px;
     }
 }
-
+@media only screen and (max-width:480px){
+    #website-logo-text{
+        font-size: 30px;
+    }
+    header{
+        height: 60px;
+    }
+}
 
 /* about us */
-@media only screen and (min-width: 320px) and (max-width:1023px){
-    #section2-wrapper{
+@media only screen and (max-width:1023px){
+    #section-about-wrapper{
         flex-direction: column;
     }
     .about-us-wrapper{
-        padding: 20px;
         width: 100%;
     }
     .about-us-img{
-        width: 100%;
+        width: 80%;
+        margin-bottom: 50px;
     }
 }
 
 /* blog */
-@media only screen and (min-width: 745px) and (max-width:1115px){
+@media only screen and (min-width: 768px) and (max-width:1120px){
     .grid-blog{
         grid-template-columns: auto auto;
         justify-content: space-around;
     }
 }
-@media only screen and (min-width: 320px) and (max-width:744px){
+@media only screen and (max-width:767px){
     .grid-blog{
         grid-template-columns: auto;
         justify-content: space-around;
     }
 }
-@media only screen and (min-width: 320px) and (max-width:400px){
+@media only screen and (max-width: 480px){
     .blog{
         width: 240px;
     }
 }
 
 /* room pricing */
-@media only screen and (min-width: 320px) and (max-width:910px){
+@media only screen and (max-width:1023px){
     .grid{
         width: 100%;
     }
 }
-@media only screen and (min-width: 320px) and (max-width:400px){
+@media only screen and (max-width:480px){
     .grid{
         gap: 1px;
     }
@@ -104,8 +100,106 @@ my pc - 1366 */
         padding: 0px;
     }
 }
-@media only screen and (min-width: 320px) and (max-width:480px){
+@media only screen and (max-width:480px){
     #rooms-and-cost-title{
         font-size: 35px;
     }
 }
+
+/* room types */
+@media only screen and (max-width:570px){
+    .room-options-info{
+        padding: 10px;
+    }
+}
+@media only screen and (max-width:480px){
+    .room-options-wrapper{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .room-options-info{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width:767px){
+    .room-img{
+        width: 300px;
+    }
+    .room-description, .room-description2{
+        width: 200px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:480px){
+    .room-img{
+        width: 100%;
+    }
+    .room-pic1, .room-pic3{
+        flex-direction: column;
+    }
+    .room-pic2{
+        flex-direction: column-reverse;
+    }
+    .line-room, .line-room2{
+        width: 1px;
+        height: 10px;
+    }
+    .room-description2{
+        box-shadow: -4px -4px var(--orangered), -8px -8px var(--dark-grey-background);
+    }
+}
+
+/* facilities */
+@media only screen and (max-width:1023px){
+    .icon p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:767px){
+    .two-icon{
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+    }
+    .icon-row:nth-child(1){
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (max-width:480px){
+    .icon-row{
+        flex-direction: column;
+    }
+}
+
+/* location */
+@media only screen and (min-width: 651px) and (max-width:767px){
+    .map-container{
+        aspect-ratio: 1/1;
+    }
+}
+@media only screen and (min-width:481px) and (max-width: 650px){
+    .map-container{
+        aspect-ratio: 2/3;
+    }
+}
+@media only screen and (max-width: 480px){
+    #section-location-wrapper{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .location-info{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .map-container{
+        width: 100%;
+        aspect-ratio: 5/3;
+    }
+}
+
+/* get in touch */
+
+/* footer */
