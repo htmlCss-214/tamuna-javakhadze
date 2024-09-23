@@ -590,6 +590,49 @@ nav{
     border: solid 1px black;
     text-shadow: 2px 2px 2px black;
     box-shadow: 3px 3px var(--orangered), 6px 6px var(--dark-grey-background);
+    cursor: pointer;
+}
+.answer{
+    display: none;
+    height: 0;
+    opacity: 0;
+    animation: slideUp 0.5s ease;
+    font-weight: bolder;
+}
+.question-box{
+    margin-bottom: 30px;
+}
+.question-box:hover .answer{
+    display: block;
+    height: 70px;
+    opacity: 1;
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown{
+    0%{
+        display: none;
+        opacity: 0;
+        height: 0;
+    }
+    100%{
+        display: block;
+        opacity: 1;
+        height: 70px;
+    }
+}
+
+@keyframes slideUp{
+    0%{
+        display: block;
+        opacity: 1;
+        height: 70px;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+        height: 0;
+    }
 }
 
 /* facilities */
@@ -726,6 +769,7 @@ nav{
     margin-bottom: 20px;
 }
 .input-wrapper{
+    /* background-color: green; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;

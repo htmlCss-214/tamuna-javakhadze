@@ -15,6 +15,13 @@ large pc - 1440px>
     }
 }
 
+/* chat with us */
+@media only screen and (max-width: 480px){
+    #chat-with-us{
+        width: 200px;
+    }
+}
+
 /* header and background img*/
 @media only screen and (min-width: 1367px){
     .background-img-content-wrapper{
@@ -151,6 +158,24 @@ large pc - 1440px>
     }
 }
 
+/* FAQs */
+
+@media only screen and (max-width:480px){
+    #section-faq{
+        padding-bottom: 280px;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:767px){
+    #section-faq{
+        padding-bottom: 150px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1023px){
+    #section-faq{
+        padding-bottom: 80px;
+    }
+}
+
 /* facilities */
 @media only screen and (max-width:1023px){
     .icon p{
@@ -201,5 +226,70 @@ large pc - 1440px>
 }
 
 /* get in touch */
+@media only screen and (max-width: 767px){
+    .all-input-wrapper{
+        flex-direction: column;
+    }
+    #form{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 570px){
+    .check-box-wrapper{
+        flex-direction: column;
+        height: 100px;
+    }
+    .check-box-title{
+        text-align: start;
+    }
+    .checkbox-container{
+        margin-bottom: 30px;
+    }
+}
 
 /* footer */
+@media only screen and (min-width: 481px) and (max-width: 767px){
+    .footer-title{
+        font-size: 20px;
+    }
+    .hr-footer{
+        display: none;
+    }
+    .footer-content-wrapper{
+        width: 100%;
+    }
+    .media-icon-wrapper{
+        width: 150px;
+    }
+    .contact-info{
+        height: 220px;
+        justify-content: space-between;
+    }
+    .media-payment-wrapper{
+        justify-content: flex-start;
+    }
+}
+@media only screen and (max-width: 480px){
+    .footer-content-wrapper{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .payment-methods{
+        align-items: center;
+    }
+    .social-media{
+        align-items: center;
+    }
+    .hr-footer{
+        display: none;
+    }
+    .contact-info{
+        margin-bottom: 50px;
+    }
+    .copyright-wrapper{
+        flex-direction: column;
+        height: 100px;
+        align-items: center;
+    }
+}
