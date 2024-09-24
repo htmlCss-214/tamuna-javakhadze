@@ -5,13 +5,24 @@ tablet or a small laptop - 768px-1023px
 small laptop - 1024px-1200px
 normal laptop - 1201px-1439px 
 large pc - 1440px>
+2k - 2560 x 1440
+4k - 3840 x 2160
 */
-
 
 /* for all */
 @media only screen and (max-width:767px){
     .title{
         font-size: 35px;
+    }
+}
+@media only screen and (min-width:1440px){
+    .title{
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width:2560px){
+    .width-center{
+        width: 60%;
     }
 }
 
@@ -25,7 +36,7 @@ large pc - 1440px>
 /* header and background img*/
 @media only screen and (min-width: 1367px){
     .background-img-content-wrapper{
-        width: 1000px;
+        width: 80%;
     }
 }
 @media only screen and (min-width: 768px) and (max-width:1023px){
@@ -74,6 +85,25 @@ large pc - 1440px>
 }
 
 /* blog */
+
+@media only screen and (min-width: 1440px){
+    .grid-blog{
+        grid-template-columns: auto auto auto auto;
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 2560px){
+    .grid-blog{
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width: 3840px){
+    .grid-blog{
+        grid-template-columns: auto auto auto auto auto auto;
+        justify-content: space-around;
+    }
+}
 @media only screen and (min-width: 768px) and (max-width:1120px){
     .grid-blog{
         grid-template-columns: auto auto;
@@ -248,6 +278,11 @@ large pc - 1440px>
 }
 
 /* footer */
+@media only screen and (min-width: 1440px){
+    .footer-content-wrapper{
+        width: 80%;
+    }
+}
 @media only screen and (min-width: 481px) and (max-width: 767px){
     .footer-title{
         font-size: 20px;
