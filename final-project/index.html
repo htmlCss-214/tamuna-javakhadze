@@ -29,18 +29,34 @@
                 <div id="website-logo">
                     <a href="index.html" id="website-logo-text">Unistay</a>
                 </div>
-                <nav>
+                <nav id="navigation">
                     <ul id="nav-ul">
+                        <li class="list-item-nav" id="drowpdown">
+                            <a class="list-item-nav-text" href='#' onclick="dropDown()">More
+                                <i class="fa-solid fa-circle-chevron-down" style="font-size: 15px;"></i>
+                            </a>
+                        </li>
                         <li class="list-item-nav"><a class="list-item-nav-text" href='index.html'>Home</a></li>
                         <li class="list-item-nav"><a class="list-item-nav-text" href='about-us.html'>About Us</a></li>
                         <li class="list-item-nav"><a class="list-item-nav-text" href='blog.html'>Blog</a></li>
                         <li class="list-item-nav"><a class="list-item-nav-text" href='rooms.html'>Rooms and Prices</a></li>
-                        <li class="list-item-nav" id="drowpdown"><a class="list-item-nav-text" href='#'>More
-                                <i class="fa-solid fa-circle-chevron-down" style="font-size: 15px;"></i></a>
-                        </li>
                         <li class="list-item-nav"><a class="list-item-nav-text" href='contact.html'>Contact</a></li>
                     </ul>
                 </nav>
+                <div id="burger" onclick="navigationPop()" >
+                    <div class="burger-flex">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="dropDownMenu">
+                <ul>
+                    <li><a class='drowpdown-item-text' href="#">FAQs</a></li>
+                    <li><a class='drowpdown-item-text' href="#">Location</a></li>
+                    <li><a class='drowpdown-item-text' href="#">Get in touch</a></li>
+                </ul>
             </div>
         </header>
 
@@ -587,5 +603,6 @@
                 </div>
             </div>
         </footer>
+        <script type="text/javascript" src="./script.js"></script>
     </body>
 </html>

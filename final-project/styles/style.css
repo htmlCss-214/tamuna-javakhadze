@@ -80,10 +80,47 @@ nav{
 #drowpdown:hover .fa-circle-chevron-down{
     color: white;
 }
+#dropDownMenu{
+    display: none;
+    width: 150px;
+    position: fixed;
+    background-color: var(--dark-grey-background);
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    margin-left: 29%;
+    line-height: 1.5;
+    text-align: center;
+    border: solid 2px white;
+    border-top: hidden;
+}
+.drowpdown-item-text{
+    color: white;
+    font-family: "Montserrat", serif;
+    transition: color 0.5s ease;
+    font-size: 17px;
+}
+.drowpdown-item-text:hover{
+    color: var(--orangered);
+}
 .list-item-nav-text{
     font-family: "Montserrat", serif ;
     font-size: 17px;
     color: var(--white-text);
+}
+#burger{
+    cursor: pointer;
+    display: none;
+}
+.burger-flex{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.burger-line{
+    background-color: var(--orangered);
+    height: 4px;
+    border-radius: 10px;
 }
 
 /* main */
