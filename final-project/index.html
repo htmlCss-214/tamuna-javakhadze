@@ -524,21 +524,21 @@
                 <div class="width-center" id="section-get-in-touch-wrapper">
                     <p class="title" id="get-in-touch-title">Get In Thouch</p>
                     <p class="text-get-in-touch">please fill out the form below and we will contact you</p>
-                    <form action="" id="form">
+                    <form id="form" name="myForm" action="" onsubmit="return validateForm()" method="post">
                         <div class="all-input-wrapper">
                             <div class="input-wrapper">
                                 <label class="label" for="name">First name:</label><br>
-                                <input class="input" type="text" id="fname" name="fname" placeholder="enter your first name" required><br>
+                                <input class="input" type="text" id="fname" name="fname" placeholder="enter your first name"><br>
                               
                                 <label class="label" for="email">Last name:</label><br>
-                                <input class="input" type="email" id="email" name="email" placeholder="enter your last name" required><br>
+                                <input class="input" type="text" id="lname" name="lname" placeholder="enter your last name"><br>
                             </div>
                             <div class="input-wrapper">
                                 <label class="label" for="phone">Phone number:</label><br>
-                                <input class="input" type="number" id="phone" name="phone" placeholder="enter your email" required><br>
+                                <input class="input" type="tel" id="phone" name="phone" placeholder="enter your email"><br>
         
                                 <label class="label" for="email">Email:</label><br>
-                                <input class="input" type="email" id="email" name="email" placeholder="enter your phone number" required><br>
+                                <input class="input" type="email" id="email" name="email" placeholder="enter your phone number"><br>
                             </div>
                         </div>
                         <div class="checkbox-container">

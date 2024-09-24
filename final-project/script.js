@@ -1,6 +1,7 @@
 // @ts-chek  
 'use strict'
 
+// dropdown menu
 function dropDown(){
     let dropDownMenu = document.getElementById('dropDownMenu');
 
@@ -11,6 +12,7 @@ function dropDown(){
     }
 }
 
+// burger click -> navigation appear on left
 function navigationPop(){
     let navigation = document.getElementById('navigation');
     let header = document.querySelector('header');
@@ -25,49 +27,27 @@ function navigationPop(){
     }
 }
 
+// form validation
+function validateForm(){
+    let firstName = document.getElementById('fname').value;
+    let lastName = document.getElementById('lname').value;
+    let phone = document.getElementById('phone').value;
+    let email = document.getElementById('email').value;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function toggleMenu() {
-//     let links = document.getElementById('myNavLinks');
-
-//     if (links.style.display === 'block') {
-//         links.style.display = 'none';
-//     } else {
-//         links.style.display = 'block';
-//     }
-// }
+    if (firstName === "") {
+        alert("please fill out first name field");
+        return false;
+    }
+    if (lastName === "") {
+        alert("please fill out last name field");
+        return false;
+    }
+    if (phone === "") {
+        alert("please fill out phone number field");
+        return false;
+    }
+    if (email === "") {
+        alert("please fill out email field");
+        return false;
+    }
+}
