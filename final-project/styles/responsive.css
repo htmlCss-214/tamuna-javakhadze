@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* 
 small phone - 320px-480px
 normal phone - 481px-767px
@@ -60,8 +67,13 @@ large pc - 1440px>
     }
     #nav-ul{
         height: 250px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         background-color: var(--dark-grey-background);
         border-radius: 0 0 0 20px;
         border: solid 2px white;
@@ -144,7 +156,10 @@ large pc - 1440px>
 /* about us */
 @media only screen and (max-width:1023px){
     #section-about-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .about-us-wrapper{
         width: 100%;
@@ -168,32 +183,42 @@ large pc - 1440px>
 /* blog */
 @media only screen and (min-width: 1440px){
     .grid-blog{
+        -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 }
 @media only screen and (min-width: 2560px){
     .grid-blog{
+        -ms-grid-columns: auto auto auto auto auto;
         grid-template-columns: auto auto auto auto auto;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 }
 @media only screen and (min-width: 3840px){
     .grid-blog{
+        -ms-grid-columns: auto auto auto auto auto auto;
         grid-template-columns: auto auto auto auto auto auto;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 }
 @media only screen and (min-width: 768px) and (max-width:1120px){
     .grid-blog{
+        -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 }
 @media only screen and (max-width:767px){
     .grid-blog{
+        -ms-grid-columns: auto;
         grid-template-columns: auto;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 }
 @media only screen and (max-width: 480px){
@@ -231,9 +256,15 @@ large pc - 1440px>
 }
 @media only screen and (max-width:480px){
     .room-options-wrapper{
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
     .room-options-info{
         width: 100%;
@@ -254,17 +285,24 @@ large pc - 1440px>
         width: 100%;
     }
     .room-pic1, .room-pic3{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .room-pic2{
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
     .line-room, .line-room2{
         width: 1px;
         height: 10px;
     }
     .room-description2{
-        box-shadow: -4px -4px var(--orangered), -8px -8px var(--dark-grey-background);
+        -webkit-box-shadow: -4px -4px var(--orangered), -8px -8px var(--dark-grey-background);
+                box-shadow: -4px -4px var(--orangered), -8px -8px var(--dark-grey-background);
     }
 }
 
@@ -294,8 +332,13 @@ large pc - 1440px>
 }
 @media only screen and (max-width:767px){
     .two-icon{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         height: 300px;
     }
     .icon-row:nth-child(1){
@@ -304,7 +347,10 @@ large pc - 1440px>
 }
 @media only screen and (max-width:480px){
     .icon-row{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
@@ -321,9 +367,16 @@ large pc - 1440px>
 }
 @media only screen and (max-width: 480px){
     #section-location-wrapper{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .location-info{
         width: 100%;
@@ -338,7 +391,10 @@ large pc - 1440px>
 /* get in touch */
 @media only screen and (max-width: 767px){
     .all-input-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     #form{
         width: 80%;
@@ -346,7 +402,10 @@ large pc - 1440px>
 }
 @media only screen and (max-width: 570px){
     .check-box-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 100px;
     }
     .check-box-title{
@@ -378,23 +437,36 @@ large pc - 1440px>
     }
     .contact-info{
         height: 220px;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
     .media-payment-wrapper{
-        justify-content: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 }
 @media only screen and (max-width: 480px){
     .footer-content-wrapper{
         width: 100%;
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .payment-methods{
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .social-media{
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .hr-footer{
         display: none;
@@ -403,8 +475,13 @@ large pc - 1440px>
         margin-bottom: 50px;
     }
     .copyright-wrapper{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         height: 100px;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }

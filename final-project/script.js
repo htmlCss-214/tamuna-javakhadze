@@ -27,11 +27,6 @@ function navigationPop(){
     }
 }
 
-// chat with us
-function chatPopUp(){
-    let 
-}
-
 // form
 function fillTheForm(){
     let firstName = document.getElementById('fname').value;
