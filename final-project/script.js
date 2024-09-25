@@ -27,27 +27,25 @@ function navigationPop(){
     }
 }
 
-// form validation
-function validateForm(){
+// chat with us
+function chatPopUp(){
+    let 
+}
+
+// form
+function fillTheForm(){
     let firstName = document.getElementById('fname').value;
     let lastName = document.getElementById('lname').value;
     let phone = document.getElementById('phone').value;
     let email = document.getElementById('email').value;
 
-    if (firstName === "") {
-        alert("please fill out first name field");
+    if (firstName === "" && lastName === "" && phone === "" && email === "") {
+        alert("please fill out the field");
         return false;
-    }
-    if (lastName === "") {
-        alert("please fill out last name field");
+    }else if(firstName === "" || lastName === "" || phone === "" || email === ""){
+        alert("please fill out every field");
         return false;
-    }
-    if (phone === "") {
-        alert("please fill out phone number field");
-        return false;
-    }
-    if (email === "") {
-        alert("please fill out email field");
-        return false;
+    }else{
+        return true;
     }
 }

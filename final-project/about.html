@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Tamuna Javakhadze">
+        <meta name="description" content="student accomodation for international students">
+        <meta name="keywords" content="international student accomodation georgia dormitory dorm tbilisi">
+        <meta name="robots" content="noindex,nofollow">
+    
+        <!-- for facebook -->
+        <meta property="og:url" content="https://tamo23tamuna.github.io/final-project/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="UniStay Georgia">
+        <meta property="og:description" content="Student accomodation in Tbilisi for international students">
+        <meta property="og:image" content="https://images.unsplash.com/photo-1576495199011-eb94736d05d6?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+    
+        <title>UniStay</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="width-center" id="nav-logo-wrapper">
+                <div id="website-logo">
+                    <a href="index.html" id="website-logo-text">Unistay</a>
+                </div>
+                <nav id="navigation">
+                    <ul id="nav-ul">
+                        <li class="list-item-nav" id="drowpdown">
+                            <p class="list-item-nav-text" id="more-nav" onclick="dropDown()">More
+                                <i class="fa-solid fa-circle-chevron-down" style="font-size: 15px;"></i>
+                            </p>
+                        </li>
+                        <li class="list-item-nav"><a class="list-item-nav-text" href='index.html'>Home</a></li>
+                        <li class="list-item-nav"><a class="list-item-nav-text" href='about.html'>About Us</a></li>
+                        <li class="list-item-nav"><a class="list-item-nav-text" href='blog.html'>Blog</a></li>
+                        <li class="list-item-nav"><a class="list-item-nav-text" href='rooms.html'>Rooms and Prices</a></li>
+                        <li class="list-item-nav"><a class="list-item-nav-text" href='contact.html'>Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="burger" onclick="navigationPop()" >
+                    <div class="burger-flex">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="dropDownMenu">
+                <ul>
+                    <li><a class='drowpdown-item-text' href="#">FAQs</a></li>
+                    <li><a class='drowpdown-item-text' href="#">Location</a></li>
+                    <li><a class='drowpdown-item-text' href="#">Get in touch</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <div id="chat-with-us">
+                <div class="chat-with-us-wrapper">
+                    <i class="fa-regular fa-comment" style="font-size: 30px;"></i>
+                    <p>Chat with us</p>
+                    <i class="fa-solid fa-upload" style="color: white; font-size: 30px;"></i>
+                </div>
+            </div>
+
+            <section id="section-about">
+                <div class="background-img-about-us">
+                    <p class="title about-unistay">About Unistay</p>
+                </div>
+                <div class="width-center" id="section-about-wrapper">   
+                    <div class="about-us-wrapper">
+                        <div class="about-us-content">
+                            <p>Welcome to <b>Unistay</b>, your gateway to premium student accommodation in <b>Georgia</b>! 
+                            As a newly established housing company, we offer international students 
+                            <b>European-standard living spaces</b> right here in <b>Tbilisi</b>. 
+                            Our goal is to create a home away from home, ensuring comfort, reliability, 
+                            and a seamless living experience throughout your academic journey.
+                            </p> 
+                            <br>
+                            <p>
+                                We are proud to have partnerships with top universities such as 
+                                <a class="link" href="https://www.gau.edu.ge/en" target="_blank">Georgian American University (GAU)</a>
+                                and <a class="link" href="https://www.bauinternational.edu.ge/" target="_blank">BAU International University</a>.
+                                By collaborating with these esteemed institutions, we aim to provide 
+                                students with convenient, high-quality housing options that support 
+                                their academic success and personal well-being.
+                            </p>
+                            <br>
+                            <p>
+                                At <b>Unistay</b>, your comfort is our top priority. 
+                                Our accommodations are fully equipped with modern amenities, 
+                                ensuring you have everything you need to thrive. 
+                                We are also committed to expanding our presence, 
+                                with plans to open new student housing facilities in Batumi and Kutaisi soon.
+                            </p>
+                        </div>
+                    </div>
+                    <img class="about-us-img" src="images/about-us.jpg" alt="image">  
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="width-center" id="footer-wrapper">
+                <div class="footer-content-wrapper">
+                    <div class="contact-info">
+                        <p class="title footer-title">Contact Info</p>
+                        <div class="icon-text-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>contactcompany@UniStay.com</p>
+                        </div>
+                        <div class="icon-text-wrapper">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>(+995) 595 23 23 23</p>
+                        </div>
+                        <div class="icon-text-wrapper">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <p>2 Marshal Archil Gelovani Ave</p>
+                        </div>
+                    </div> 
+                    <hr class="hr-footer">
+                    <div class="media-payment-wrapper">
+                        <div class="social-media">
+                            <p class="title footer-title">Social Media</p>
+                            <div class="media-icon-wrapper">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-methods">
+                            <p class="title footer-title">Mayment Methods</p>
+                            <div>
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                                <i class="fa-brands fa-cc-visa"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright-wrapper">
+                    <p id="copyright">Copyright ©2024 All rights reserved</p>
+                    <p class="footer-text">Term&Use</p>
+                    <p class="footer-text">Privacy Policy</p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>

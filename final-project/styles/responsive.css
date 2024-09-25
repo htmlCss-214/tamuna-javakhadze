@@ -154,9 +154,18 @@ large pc - 1440px>
         margin-bottom: 50px;
     }
 }
+@media only screen and (min-width:480px) and (max-width:767px){
+    .about-unistay{
+        font-size: 50px;
+    }
+}
+@media only screen and (min-width:1440px){
+    .about-unistay{
+        font-size: 100px;
+    }
+}
 
 /* blog */
-
 @media only screen and (min-width: 1440px){
     .grid-blog{
         grid-template-columns: auto auto auto auto;
